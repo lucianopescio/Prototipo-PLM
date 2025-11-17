@@ -1,0 +1,26 @@
+fastapi==0.109.0
+uvicorn==0.27.0
+python-multipart==0.0.6
+pymongo==4.6.0
+numpy==1.24.3
+pandas==2.0.3
+scipy==1.11.4
+matplotlib==3.7.2
+transformers==4.35.0
+biopython==1.81
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+pytest==7.4.3
+requests==2.31.0
+simpy==4.0.1
+
+# NOTE: heavy packages (TensorFlow, PyTorch/CUDA builds, torchvision)
+# are intentionally not fully pinned here to avoid dependency resolution
+# conflicts during an automated install. Install them manually according
+# to your environment (CPU vs GPU) following the README instructions.
+
+# Optional / manual installs:
+# tensorflow (CPU/GPU): see README
+# torch & torchvision: see README
+# gym, oct2py, streamlit, datasets: can be installed as needed
