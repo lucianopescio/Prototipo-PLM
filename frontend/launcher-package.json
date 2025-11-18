@@ -1,0 +1,17 @@
+{
+  "name": "sistema-plm-launcher",
+  "version": "1.0.0",
+  "description": "Iniciador automático para el Sistema PLM",
+  "scripts": {
+    "start": "node iniciar_sistema.js",
+    "start:dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd .. && python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload",
+    "start:frontend": "npm run dev",
+    "install:all": "npm install && cd .. && pip install -r requirements.txt",
+    "build": "npm run build",
+    "preview": "npm run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
