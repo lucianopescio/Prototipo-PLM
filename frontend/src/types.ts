@@ -1,0 +1,1 @@
+export type ViewType = 'dashboard' | 'upload' | 'plm' | 'lab' | 'datasets' | 'twin' | 'query' | 'alerts';
